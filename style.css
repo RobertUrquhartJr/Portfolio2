@@ -96,13 +96,24 @@ header .info-text .scroll::before {
 }
 
 #about,
-#projects {
+#projects,
+#projectsPage {
     background-color: #2f5e7e;
     padding: 40px;
 }
 
+#projectsPage {
+    background-color: #2f5e7e;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
 #about .header,
-#projects .header {
+#projects .header,
+#projectsPage .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +121,8 @@ header .info-text .scroll::before {
 }
 
 #about .header h1,
-#projects .header h1 {
+#projects .header h1,
+#projectsPage .header h1 {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -128,7 +140,8 @@ header .info-text .scroll::before {
     transition: all .3s ease;
 }
 
-#projects .header a {
+#projects .header a,
+#projectsPage .header a {
     text-decoration: none;
     font-size: 1.3em;
     color: #fff;
@@ -145,13 +158,15 @@ header .info-text .scroll::before {
     cursor: pointer;
 }
 
-#projects .header a:hover {
+#projects .header a:hover,
+#projectsPage .header a:hover {
     border-color: goldenrod;
     box-shadow: none;
 }
 
 #about .card,
-#projects .card {
+#projects .card,
+#projectsPage .card {
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
     border-radius: 20px;
@@ -162,7 +177,8 @@ header .info-text .scroll::before {
 }
 
 #about .card:hover,
-#projects .card:hover {
+#projects .card:hover,
+#projectsPage .card:hover {
     border-color: goldenrod;
     box-shadow: none;
 }
@@ -180,7 +196,8 @@ header .info-text .scroll::before {
 }
 
 #about .card .info h1,
-#projects .card .info h1 {
+#projects .card .info h1,
+#projectsPage .card .info h1 {
     margin-bottom: 20px;
     color: #fff;
     font-size: 1.7rem;
@@ -189,20 +206,24 @@ header .info-text .scroll::before {
 }
 
 #about .card .info p,
-#projects .card .info p {
+#projects .card .info p,
+#projectsPage .card .info p {
     color: #ccc;
     font-size: 1.1rem;
     line-height: 1.8rem;
+    text-indent: 2rem;
 }
 
-#projects .project-cards {
+#projects .project-cards,
+#projectsPage .project-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
 
-#projects .project-cards .card {
+#projects .project-cards .card,
+#projectsPage .project-cards .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +231,8 @@ header .info-text .scroll::before {
     min-width: 350px;
 }
 
-#projects .project-cards .card .info i {
+#projects .project-cards .card .info i,
+#projectsPage .project-cards .card .info i {
     color: #fff;
     font-size: 8rem;
     width: 100%;
@@ -218,11 +240,13 @@ header .info-text .scroll::before {
     margin-bottom: 1.4rem;
 }
 
-#projects .project-cards .card .info h1 {
+#projects .project-cards .card .info h1,
+#projectsPage .project-cards .card .info h1 {
     text-align: center;
 }
 
-#projects .project-cards .card .info p {
+#projects .project-cards .card .info p,
+#projectsPage .project-cards .card .info p {
     font-size: 1.1rem;
 }
 
@@ -284,7 +308,7 @@ header .info-text .scroll::before {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     /* Black w/ opacity */
 }
 
@@ -295,7 +319,8 @@ header .info-text .scroll::before {
     /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
+    border-radius: 10px;
     /* Could be more or less, depending on screen size */
 }
 
