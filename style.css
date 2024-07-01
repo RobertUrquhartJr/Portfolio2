@@ -372,7 +372,7 @@ header .info-text .scroll::before {
 }
 
 .modal-button-secondary:hover {
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color: rgba(44, 5, 5, 0.047);
 }
 
 .close {
