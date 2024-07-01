@@ -90,22 +90,41 @@ window.addEventListener('scroll', function () {
     }
 });
 
-const modal = document.getElementById("contactModal");
+document.addEventListener('DOMContentLoaded', (event) => {
+    const modal = document.getElementById('contactModal');
+    const btn = document.getElementById('contactBtn');
+    const span = document.getElementsByClassName('close')[0];
 
-const btn = document.getElementById("contactBtn");
-
-const span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    btn.onclick = function () {
+        modal.style.display = 'block';
     }
-}
+
+    span.onclick = function () {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        emailjs.init({
+            publicKey: 'bt8_omGuR2xWhU3NY',
+        });
+
+        emailjs.sendForm('contact_service', 'contact_form', this)
+            .then(function () {
+                console.log('SUCCESS!');
+                alert('Email sent successfully!');
+                modal.style.display = 'none';
+            }, function (error) {
+                console.log('FAILED...', error);
+                alert('Failed to send email. Please try again later.');
+            });
+    });
+});
