@@ -312,6 +312,13 @@ footer {
     font-size: 1.1rem;
 }
 
+#projects .project-cards .card .info #projectlogo {
+
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
 .scroll-top {
     display: none;
     position: fixed;
