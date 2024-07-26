@@ -210,6 +210,7 @@ footer {
     box-shadow: none;
 }
 
+
 #about .card img {
     max-width: 200px;
     max-height: 200px;
@@ -291,6 +292,7 @@ footer {
     align-items: center;
     flex: 1;
     min-width: 300px;
+    background-color: #2f5e7e;
 }
 
 #projects .project-cards .card .info i,
