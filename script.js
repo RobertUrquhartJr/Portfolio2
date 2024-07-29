@@ -91,25 +91,20 @@ window.addEventListener('scroll', function () {
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const modal = document.getElementById('contactModal');
-    const btn = document.getElementById('contactBtn');
-    const span = document.getElementsByClassName('close')[0];
+    // Existing contact modal functionality
+    const contactModal = document.getElementById('contactModal');
+    const contactBtn = document.getElementById('contactBtn');
+    const contactSpan = contactModal.querySelector('.close');
 
-    btn.onclick = function () {
-        modal.style.display = 'block';
+    contactBtn.onclick = function () {
+        contactModal.style.display = 'block';
     }
 
-    span.onclick = function () {
-        modal.style.display = 'none';
+    contactSpan.onclick = function () {
+        contactModal.style.display = 'none';
     }
 
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
-
-
+    // Contact form submission
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -121,10 +116,50 @@ document.addEventListener('DOMContentLoaded', (event) => {
             .then(function () {
                 console.log('SUCCESS!');
                 alert('Email sent successfully!');
-                modal.style.display = 'none';
+                contactModal.style.display = 'none';
             }, function (error) {
                 console.log('FAILED...', error);
                 alert('Failed to send email. Please try again later.');
             });
     });
+
+    // New project modal functionality
+    const projectModal = document.getElementById("projectModal");
+    const projectSpan = projectModal.querySelector(".close");
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(function (card) {
+        card.addEventListener('click', function () {
+            const title = this.querySelector('h1').textContent;
+            const description = this.querySelector('p').textContent;
+            const imgElement = this.querySelector('img');
+
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+
+            const modalImage = document.getElementById('modalImage');
+            if (imgElement && imgElement.src) {
+                modalImage.src = imgElement.src;
+                modalImage.style.display = 'block';
+            } else {
+                modalImage.style.display = 'none';
+            }
+
+            projectModal.style.display = "block";
+        });
+    });
+
+    projectSpan.onclick = function () {
+        projectModal.style.display = "none";
+    }
+
+    // Combined window click event for both modals
+    window.onclick = function (event) {
+        if (event.target == contactModal) {
+            contactModal.style.display = 'none';
+        }
+        if (event.target == projectModal) {
+            projectModal.style.display = "none";
+        }
+    }
 });
