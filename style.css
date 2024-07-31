@@ -416,6 +416,14 @@ footer {
 
 @media screen and (max-width: 480px) {
 
+    #about .card,
+    #skills .card,
+    #certs .card,
+    #projects .card,
+    #projectsPage .card {
+        padding: 15px;
+    }
+
     #about .card img {
         max-width: 100%;
         height: auto;
@@ -424,16 +432,139 @@ footer {
 
     #skills .card .info .tech img,
     #certs .card .info .tech img {
-        max-width: 60px;
-        max-height: 60px;
+        max-width: 50px;
+        max-height: 50px;
     }
 
-    #skills .card .info .tech figcaption {
-        font-size: 0.9rem;
+    #skills .card .info .tech figcaption,
+    #certs .card .info .tech figcaption {
+        font-size: 0.8rem;
     }
 
     .modal-content {
-        width: 90%;
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header a,
+    .modal-button-secondary {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    #projectlogo {
+        max-height: 150px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .github-btn,
+    .live-site-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #about .card,
+    #skills .card,
+    #certs .card,
+    #projects .card,
+    #projectsPage .card {
+        padding: 15px;
+    }
+
+    #about .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #skills .card .info .tech img,
+    #certs .card .info .tech img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    #skills .card .info .tech figcaption,
+    #certs .card .info .tech figcaption {
+        font-size: 0.8rem;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header a,
+    .modal-button-secondary {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    #projectlogo {
+        max-height: 150px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .github-btn,
+    .live-site-btn {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #about .card .info h1,
+    #skills .card .info h1,
+    #certs .card .info h1,
+    #projects .card .info h1,
+    #projectsPage .card .info h1 {
+        font-size: 1.4rem;
+    }
+
+    #about .card .info p,
+    #skills .card .info p,
+    #certs .card .info p,
+    #projects .card .info p,
+    #projectsPage .card .info p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .modal-button {
+        padding: 8px 12px;
+        font-size: 14px;
     }
 }
 
