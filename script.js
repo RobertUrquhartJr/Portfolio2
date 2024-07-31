@@ -131,16 +131,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     cards.forEach(function (card) {
         card.addEventListener('click', function () {
             const title = this.querySelector('h1').textContent;
-            const description = this.querySelector('p').textContent;
             const imgElement = this.querySelector('img');
 
             document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalDescription').textContent = description;
+            const modalDescription = document.getElementById('modalDescription');
+            modalDescription.innerHTML = '<a href="projects.html" class="modal-button modal-button-secondary">View Project Details</a>';
 
             const modalImage = document.getElementById('modalImage');
             if (imgElement && imgElement.src) {
                 modalImage.src = imgElement.src;
                 modalImage.style.display = 'block';
+                modalImage.style.maxWidth = '100%';
+                modalImage.style.maxHeight = '300px';
+                modalImage.style.objectFit = 'contain';
             } else {
                 modalImage.style.display = 'none';
             }
@@ -163,4 +166,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 });
-

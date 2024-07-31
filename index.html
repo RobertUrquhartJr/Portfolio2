@@ -26,8 +26,13 @@
     <section id="about">
         <div class="header">
             <h1>About Me</h1>
-
-            <button class="contactBtn" id="contactBtn">Contact Me</button>
+            <div>
+                <a href="assets/RobertUrquhartJr_Resume.pdf"
+                    download="RobertUrquhartJr_Resume"
+                    class="modal-button modal-button-secondary">Download
+                    Resume</a>
+                <button class="contactBtn" id="contactBtn">Contact Me</button>
+            </div>
             <div id="contactModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
@@ -53,10 +58,7 @@
                             <div class="modal-footer">
                                 <input type="submit" value="Submit"
                                     class="modal-button modal-button-primary">
-                                <a href="assets/RobertUrquhartJr_Resume.pdf"
-                                    download="RobertUrquhartJr_Resume"
-                                    class="modal-button modal-button-secondary">Download
-                                    Resume</a>
+
                             </div>
 
                         </form>
@@ -136,11 +138,11 @@
                     <figcaption>Javascript</figcaption>
                 </figure>
 
-                <figure class="tech">
+                <!--  <figure class="tech">
                     <img src="assets/icons8-python.svg" id="python"
                         alt="Python icon">
                     <figcaption>Python</figcaption>
-                </figure>
+                </figure> -->
 
                 <figure class="tech">
                     <img src="assets/icons8-node-js.svg" id="node"
@@ -184,32 +186,30 @@
     <section id="projects">
         <div class="header">
             <h1>Projects</h1>
-            <a href="projects.html"> See More</a>
+            <a href="projects.html"> View Project Details </a>
         </div>
         <div class="project-cards">
             <div class="card">
                 <div class="info">
-                    <h1>KNN Camp</h1>
+                    <h1>Kind, Not Nice Camp</h1>
                     <img src="assets/knncampphoto.jpg" alt="" id="projectlogo">
 
-                    <p>Web application created to </p>
+                    <p>Kind, Not Nice Camp is a full-stack web application
+                        developed
+                        in Colt Steele's Web Developer Bootcamp. The application
+                        allows users to create a user profile and has login and
+                        logout functionality. While logged in a user is able to
+                        add,
+                        edit and delete campgrounds along with add or delete
+                        images.
+                        Interactive maps allow users to view the location of
+                        campgrounds </p>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="info">
-                    <i class='bx bx-paper-plane'></i>
-                    <h1>KNN Camp</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit.
-                        Quam, quod autem in sit praesentium possimus
-                        voluptatibus ea. Labore explicabo recusandae
-                        repudiandae, error obcaecati ad necessitatibus
-                        voluptatem velit saepe minima magni?</p>
-                </div>
-            </div>
 
-            <div class="card">
+
+            <!--- <div class="card">
                 <div class="info">
                     <i class='bx bxs-plane-take-off'></i>
                     <h1>Insert Project Title 3</h1>
@@ -220,7 +220,7 @@
                         repudiandae, error obcaecati ad necessitatibus
                         voluptatem velit saepe minima magni?</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 
@@ -242,9 +242,7 @@
         <i class='bx bx-up-arrow-alt'></i>
     </button>
 
-    <footer class="pgfooter">
-        <p>Robert Urquhart 2024</p>
-    </footer>
+
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
@@ -254,5 +252,8 @@
         </script>
 
 </body>
+<footer class="pgfooter">
+    <p>Robert Urquhart 2024</p>
+</footer>
 
 </html>

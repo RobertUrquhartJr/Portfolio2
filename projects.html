@@ -7,6 +7,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
         rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>Projects</title>
 </head>
 
@@ -17,116 +19,85 @@
     </div>
     <div class="project-cards">
         <div class="card">
+            <img src="assets/knncampphoto.jpg" alt="camp logo" id="projectlogo">
             <div class="info">
-                <i class='bx bx-code-alt'></i>
-                <h1>Insert Project Title 1</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quam, quod autem in sit praesentium possimus
-                    voluptatibus ea. Labore explicabo recusandae
-                    repudiandae, error obcaecati ad necessitatibus
-                    voluptatem velit saepe minima magni?</p>
+                <h1>Kind, Not Nice Camp</h1>
+
+                <p>Kind, Not Nice Camp is a full-stack web application developed
+                    in Colt Steele's Web Developer Bootcamp. The application
+                    allows users to create a user profile and has login and
+                    logout functionality. While logged in a user is able to add,
+                    edit and delete campgrounds along with add or delete images.
+                    Interactive maps allow users to view the location of
+                    campgrounds.</p>
+                <br>
+
+                <p>
+                <p class="fs-3 text-start" al>
+                    <strong>Project Key Takeaways</strong>
+                </p>
+                <br>
+                <p>
+
+                    • <strong>CRUD</strong> - Implemented Mongoose-based CRUD
+                    operations for Atlas
+                    MongoDB, enabling users ability to add, edit and delete
+                    campgrounds within the application.
+                    <br>
+                    • <strong>Express routing</strong> - I learned to
+                    incorporate
+                    Express.js for routing and middleware,
+                    implementing authentication checks and post-login redirects
+                    functionality.
+                    <br>
+
+                    • <strong>EJS</strong> - for dynamic content rendering,
+                    including data
+                    integration, conditional rendering, and form handling.
+                    <br>
+                    • <strong>API Implementation</strong> - Incorporated
+                    Cloudinary and Multer for image uploads,
+                    storing metadata in MongoDB. Utilized Mapbox for interactive
+                    campground maps, using
+                    GeoJSON for location plotting and clustering.
+                    <br>
+                    • <strong>User Session</strong> - Utilized Express Session
+                    for
+                    maintaining user sessions and
+                    Connect-Flash for displaying flash messages, enhancing user
+                    experience.
+                    <br>
+
+                    • <strong>Error Handling</strong> - Implemented
+                    comprehensive
+                    error handling using try-catch
+                    blocks, centralized middleware, and custom error messages.
+                    <br>
+                    • <strong>Live Deployment</strong> - Deployed on Render with
+                    GitHub-based auto-updates,
+                    environment variable configuration, and uptime maintenance.
+                </p>
             </div>
+            <footer class="footer">
+                <a href="https://github.com/RobertUrquhartJr/KNNCamp-Project"
+                    class="github-btn modal-button-secondary">
+                    <img src="assets/icons8-github-48.png" alt="GitHub Logo"
+                        style="width: 30px; height: 30px; margin-right: 5px; vertical-align: middle;">
+                    View Github Repository
+                </a>
+                <a href="https://kindnotnice.com"
+                    class="live-site-btn modal-button-secondary">
+                    View Live Website
+                </a>
+            </footer>
         </div>
 
-        <div class="card">
-            <div class="info">
-                <i class='bx bx-paper-plane'></i>
-                <h1>Insert Project Title 2</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quam, quod autem in sit praesentium possimus
-                    voluptatibus ea. Labore explicabo recusandae
-                    repudiandae, error obcaecati ad necessitatibus
-                    voluptatem velit saepe minima magni?</p>
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="info">
-                <i class='bx bxs-plane-take-off'></i>
-                <h1>Insert Project Title 3</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quam, quod autem in sit praesentium possimus
-                    voluptatibus ea. Labore explicabo recusandae
-                    repudiandae, error obcaecati ad necessitatibus
-                    voluptatem velit saepe minima magni?</p>
-            </div>
-        </div>
-        <div class="project-cards">
-            <div class="card">
-                <div class="info">
-                    <i class='bx bxs-component'></i>
-                    <h1>Insert Project Title 4</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Quam, quod autem in sit praesentium possimus
-                        voluptatibus ea. Labore explicabo recusandae
-                        repudiandae, error obcaecati ad necessitatibus
-                        voluptatem velit saepe minima magni?</p>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="info">
-                    <i class='bx bxs-paint-roll'></i>
-                    <h1>Insert Project Title 5</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Quam, quod autem in sit praesentium possimus
-                        voluptatibus ea. Labore explicabo recusandae
-                        repudiandae, error obcaecati ad necessitatibus
-                        voluptatem velit saepe minima magni?</p>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="info">
-                    <i class='bx bxs-calendar'></i>
-                    <h1>Insert Project Title 6</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Quam, quod autem in sit praesentium possimus
-                        voluptatibus ea. Labore explicabo recusandae
-                        repudiandae, error obcaecati ad necessitatibus
-                        voluptatem velit saepe minima magni?</p>
-                </div>
-            </div>
-            <div class="project-cards">
-                <div class="card">
-                    <div class="info">
-                        <i class='bx bxs-error'></i>
-                        <h1>Insert Project Title 7</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.
-                            Quam, quod autem in sit praesentium possimus
-                            voluptatibus ea. Labore explicabo recusandae
-                            repudiandae, error obcaecati ad necessitatibus
-                            voluptatem velit saepe minima magni?</p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="info">
-                        <i class='bx bxs-castle'></i>
-                        <h1>Insert Project Title 8</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.
-                            Quam, quod autem in sit praesentium possimus
-                            voluptatibus ea. Labore explicabo recusandae
-                            repudiandae, error obcaecati ad necessitatibus
-                            voluptatem velit saepe minima magni?</p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="info">
-                        <i class='bx bxs-balloon'></i>
-                        <h1>Insert Project Title 9</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit.
-                            Quam, quod autem in sit praesentium possimus
-                            voluptatibus ea. Labore explicabo recusandae
-                            repudiandae, error obcaecati ad necessitatibus
-                            voluptatem velit saepe minima magni?</p>
-                    </div>
-                </div>
-            </div>
+    </div>
 
 
 
@@ -153,11 +124,21 @@
 
 
 
+    <div class="scroll-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+    <script src="script.js"></script>
 
 
-
-
-            <script src="script.js"></script>
 </body>
 
 </html>

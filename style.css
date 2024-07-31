@@ -147,7 +147,8 @@ footer {
     text-transform: uppercase;
 }
 
-#about .header .contactBtn {
+.contactBtn,
+.projectBtn {
     background-color: #2f5e7e;
     text-decoration: none;
     font-size: 1.3em;
@@ -157,6 +158,11 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
     border-radius: 6px;
     transition: all .3s ease;
+}
+
+.projectBtn a {
+    color: #fff;
+    text-decoration: none;
 }
 
 #skills .header a,
@@ -173,7 +179,8 @@ footer {
     transition: all .3s ease;
 }
 
-#about .header .contactBtn:hover {
+#about .header .contactBtn:hover,
+#projectsPage .project-cards .card .footer .projectBtn :hover {
     border-color: goldenrod;
     box-shadow: none;
     cursor: pointer;
@@ -187,10 +194,22 @@ footer {
     box-shadow: none;
 }
 
+#projects .card {
+    justify-content: center;
+    max-width: 50%;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+
 #about .card,
 #skills .card,
 #certs .card,
-#projects .card,
 #projectsPage .card {
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
@@ -266,6 +285,8 @@ footer {
     font-family: 'Ubuntu';
 }
 
+
+
 #about .card .info p,
 #skills .card .info p,
 #certs .card .info p,
@@ -314,12 +335,24 @@ footer {
     font-size: 1.1rem;
 }
 
-#projects .project-cards .card .info #projectlogo {
 
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5%;
+#projects .project-cards .card .info #projectlogo,
+#projectsPage .project-cards .card .info #projectlogo {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
 }
+
+#projectsPage .project-cards .card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
 
 .scroll-top {
     display: none;
@@ -465,13 +498,33 @@ footer {
 }
 
 .modal-button-secondary {
-    background-color: transparent;
-    color: #b44352;
-    border: 1px solid #2c0404;
+    background-color: rgb(170, 133, 41);
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-radius: 6px;
+    transition: all .3s ease;
 }
 
 .modal-button-secondary:hover {
     background-color: rgba(44, 5, 5, 0.047);
+}
+
+#modalDescription .modal-button-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2f5e7e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#modalDescription .modal-button-secondary:hover {
+    background-color: #1e3d52;
 }
 
 .close {
@@ -535,6 +588,38 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.live-site-btn {
+    background-color: #2f5e7e;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-radius: 6px;
+    transition: all .3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.github-btn:hover,
+.live-site-btn:hover {
+    border-color: goldenrod;
+    box-shadow: none;
+}
+
+.github-btn img {
+    margin-right: 5px;
 }
 
 /*input[type=submit] {
@@ -613,6 +698,14 @@ input[type=submit]:hover {
     max-width: 600px;
 }
 
+#modalImage {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
 .close {
     color: #aaa;
     float: right;
@@ -641,6 +734,9 @@ input[type=submit]:hover {
 }
 
 .project-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
