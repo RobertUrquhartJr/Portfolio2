@@ -195,7 +195,6 @@ footer {
 }
 
 #projects .card {
-    justify-content: center;
     max-width: 50%;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
@@ -312,7 +311,7 @@ footer {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    min-width: 300px;
+    min-width: 150px;
     background-color: #2f5e7e;
 }
 
@@ -355,7 +354,7 @@ footer {
 
 
 .scroll-top {
-    display: none;
+    display: flex;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -408,6 +407,13 @@ footer {
     text-indent: 0;
 }
 
+.header a,
+.modal-button-secondary,
+.contactBtn {
+
+    margin: .25rem .25rem .25rem .25rem;
+}
+
 
 #skills .card .info .tech {
     max-width: 100%;
@@ -424,6 +430,7 @@ footer {
         padding: 15px;
     }
 
+
     #about .card img {
         max-width: 100%;
         height: auto;
@@ -457,9 +464,11 @@ footer {
     }
 
     .header a,
-    .modal-button-secondary {
+    .modal-button-secondary,
+    .contactBtn {
         font-size: 1em;
-        padding: 8px 16px;
+        padding: 8px 12px;
+        margin: .25rem .25rem .25rem .25rem;
     }
 
     #projectlogo {
@@ -476,70 +485,11 @@ footer {
         width: 100%;
         justify-content: center;
     }
-}
 
-
-@media screen and (max-width: 480px) {
-
-    #about .card,
-    #skills .card,
-    #certs .card,
-    #projects .card,
-    #projectsPage .card {
-        padding: 15px;
-    }
-
-    #about .card img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    #skills .card .info .tech img,
-    #certs .card .info .tech img {
-        max-width: 50px;
-        max-height: 50px;
-    }
-
-    #skills .card .info .tech figcaption,
-    #certs .card .info .tech figcaption {
-        font-size: 0.8rem;
-    }
-
-    .modal-content {
-        width: 95%;
-        margin: 5% auto;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .header h1 {
-        font-size: 1.8rem;
-    }
-
-    .header a,
-    .modal-button-secondary {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-
-    #projectlogo {
-        max-height: 150px;
-    }
-
-    .footer {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .github-btn,
-    .live-site-btn {
-        width: 80%;
-        justify-content: center;
+    .scroll-top {
+        bottom: 40px;
+        right: 60px;
+        padding: 12px 14px;
     }
 }
 
@@ -565,6 +515,12 @@ footer {
     .modal-button {
         padding: 8px 12px;
         font-size: 14px;
+    }
+
+    .scroll-top {
+        bottom: 40px;
+        right: 80px;
+        padding: 10px 12px;
     }
 }
 
