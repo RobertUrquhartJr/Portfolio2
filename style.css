@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 * {
     margin: 0;
@@ -11,9 +13,11 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+
 body {
     font-size: 14px;
 }
+
 
 header {
     width: 100%;
@@ -22,6 +26,7 @@ header {
     color: #fff;
 }
 
+
 header #particles {
     position: absolute;
     width: 100%;
@@ -29,7 +34,9 @@ header #particles {
     top: 0;
     left: 0;
 
+
 }
+
 
 header .info-text {
     display: flex;
@@ -40,15 +47,18 @@ header .info-text {
     height: 100vh;
 }
 
+
 header .info-text h1 {
     font-size: 5rem;
     font-weight: 500;
     font-family: 'Ubuntu';
 }
 
+
 header .info-text h3 {
     font-size: 1.5rem;
 }
+
 
 header .info-text .scroll {
     position: absolute;
@@ -58,11 +68,14 @@ header .info-text .scroll {
     transform: translate(0, -50%);
     transition: all .5s;
 
+
 }
+
 
 header .info-text .scroll:hover {
     opacity: .7;
 }
+
 
 header .info-text .scroll::before {
     position: absolute;
@@ -77,23 +90,28 @@ header .info-text .scroll::before {
     animation: pulse 3s infinite;
 }
 
+
 footer {
     background-color: #2f5e7e;
     text-align: center;
     color: goldenrod;
 }
 
+
 @keyframes pulse {
+
 
     0%,
     100% {
         opacity: 0;
     }
 
+
     15%,
     45% {
         opacity: 1;
     }
+
 
     60% {
         box-shadow: 0 0 0 30px rgba(255, 255, 255, .1);
@@ -101,14 +119,15 @@ footer {
     }
 }
 
+
 #about,
 #skills,
 #certs,
-#projects,
-#projectsPage {
+#projects {
     background-color: #2f5e7e;
     padding: 40px;
 }
+
 
 #skills,
 #certs {
@@ -117,6 +136,7 @@ footer {
     justify-content: space-around
 }
 
+
 #projectsPage {
     background-color: #2f5e7e;
     margin: 0;
@@ -124,7 +144,9 @@ footer {
     width: 100%;
     height: 100%;
 
+
 }
+
 
 #about .header,
 #skills .header,
@@ -137,15 +159,20 @@ footer {
     margin-bottom: 40px;
 }
 
+
 #about .header h1,
 #skills .header h1,
 #certs .header h1,
 #projects .header h1,
+h2,
+h3,
+h4,
 #projectsPage .header h1 {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
+
 
 .contactBtn,
 .projectBtn {
@@ -160,10 +187,12 @@ footer {
     transition: all .3s ease;
 }
 
+
 .projectBtn a {
     color: #fff;
     text-decoration: none;
 }
+
 
 #skills .header a,
 #certs .header a,
@@ -179,12 +208,14 @@ footer {
     transition: all .3s ease;
 }
 
+
 #about .header .contactBtn:hover,
 #projectsPage .project-cards .card .footer .projectBtn :hover {
     border-color: goldenrod;
     box-shadow: none;
     cursor: pointer;
 }
+
 
 #skills .header a:hover,
 #certs .header a:hover,
@@ -194,7 +225,9 @@ footer {
     box-shadow: none;
 }
 
+
 #projects .card {
+    color: white;
     max-width: 50%;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
@@ -204,6 +237,8 @@ footer {
     border: 1px solid transparent;
     transition: all .3s ease;
 }
+
+
 
 
 #about .card,
@@ -219,6 +254,7 @@ footer {
     transition: all .3s ease;
 }
 
+
 #about .card:hover,
 #skills .card:hover,
 #certs .card:hover,
@@ -229,10 +265,15 @@ footer {
 }
 
 
+#projectsPage .card {
+    max-width: 70%;
+}
+
 #about .card img {
     max-width: 200px;
     max-height: 200px;
 }
+
 
 #skills .card .info .tech img,
 #certs .card .info .tech img {
@@ -241,12 +282,14 @@ footer {
     margin-bottom: 10px;
 }
 
+
 #about .card .info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
+
 
 #skills .card .info,
 #certs .card .info {
@@ -256,6 +299,7 @@ footer {
     align-items: center;
     gap: 20px;
 }
+
 
 #skills .card .info .tech,
 #certs .card .info .tech {
@@ -267,10 +311,12 @@ footer {
     max-width: 150px;
 }
 
+
 #skills .card .info figcaption,
 #certs .card .info figcaption {
     color: white;
 }
+
 
 #about .card .info h1,
 #skills .card .info h1,
@@ -286,6 +332,9 @@ footer {
 
 
 
+
+
+
 #about .card .info p,
 #skills .card .info p,
 #certs .card .info p,
@@ -297,13 +346,16 @@ footer {
     text-indent: 2rem;
 }
 
+
 #projects .project-cards,
 #projectsPage .project-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
+
 
 #projects .project-cards .card,
 #projectsPage .project-cards .card {
@@ -315,6 +367,7 @@ footer {
     background-color: #2f5e7e;
 }
 
+
 #projects .project-cards .card .info i,
 #projectsPage .project-cards .card .info i {
     color: #fff;
@@ -324,15 +377,19 @@ footer {
     margin-bottom: 1.4rem;
 }
 
+
 #projects .project-cards .card .info h1,
 #projectsPage .project-cards .card .info h1 {
     text-align: center;
 }
 
+
 #projects .project-cards .card .info p,
 #projectsPage .project-cards .card .info p {
     font-size: 1.1rem;
 }
+
+
 
 
 #projects .project-cards .card .info #projectlogo,
@@ -343,13 +400,18 @@ footer {
     object-position: center;
     display: block;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
+
 
 #projectsPage .project-cards .card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
+
+
+
 
 
 
@@ -369,12 +431,15 @@ footer {
     transition: all .3s ease;
 }
 
+
 .scroll-top:hover {
     border-color: goldenrod;
     box-shadow: none;
 }
 
+
 @media screen and (max-width: 768px) {
+
 
     #about .card,
     #skills .card,
@@ -383,11 +448,13 @@ footer {
         align-items: center;
     }
 
+
     #about .card img {
         max-width: 150px;
         max-height: 150px;
         margin-bottom: 20px;
     }
+
 
     #skills .card .info .tech img,
     #certs .card .info .tech img {
@@ -396,6 +463,7 @@ footer {
     }
 }
 
+
 #about .card .info,
 #skills .card .info,
 #certs .card .info {
@@ -403,16 +471,21 @@ footer {
     text-align: center;
 }
 
+
 #about .card .info p {
     text-indent: 0;
 }
+
 
 .header a,
 .modal-button-secondary,
 .contactBtn {
 
+
     margin: .25rem .25rem .25rem .25rem;
 }
+
+
 
 
 #skills .card .info .tech {
@@ -420,7 +493,10 @@ footer {
 }
 
 
+
+
 @media screen and (max-width: 480px) {
+
 
     #about .card,
     #skills .card,
@@ -431,11 +507,14 @@ footer {
     }
 
 
+
+
     #about .card img {
         max-width: 100%;
         height: auto;
         margin-bottom: 20px;
     }
+
 
     #skills .card .info .tech img,
     #certs .card .info .tech img {
@@ -443,15 +522,18 @@ footer {
         max-height: 50px;
     }
 
+
     #skills .card .info .tech figcaption,
     #certs .card .info .tech figcaption {
         font-size: 0.8rem;
     }
 
+
     .modal-content {
         width: 95%;
         margin: 5% auto;
     }
+
 
     .header {
         flex-direction: column;
@@ -459,9 +541,11 @@ footer {
         gap: 15px;
     }
 
+
     .header h1 {
         font-size: 1.8rem;
     }
+
 
     .header a,
     .modal-button-secondary,
@@ -471,14 +555,17 @@ footer {
         margin: .25rem .25rem .25rem .25rem;
     }
 
+
     #projectlogo {
         max-height: 150px;
     }
+
 
     .footer {
         flex-direction: column;
         gap: 15px;
     }
+
 
     .github-btn,
     .live-site-btn {
@@ -486,14 +573,17 @@ footer {
         justify-content: center;
     }
 
+
     .scroll-top {
         bottom: 40px;
-        right: 60px;
+        right: 20px;
         padding: 12px 14px;
     }
 }
 
+
 @media screen and (max-width: 360px) {
+
 
     #about .card .info h1,
     #skills .card .info h1,
@@ -502,6 +592,7 @@ footer {
     #projectsPage .card .info h1 {
         font-size: 1.4rem;
     }
+
 
     #about .card .info p,
     #skills .card .info p,
@@ -512,15 +603,25 @@ footer {
         line-height: 1.5rem;
     }
 
+
     .modal-button {
         padding: 8px 12px;
         font-size: 14px;
     }
 
+
+    .scroll-top {
+
+        padding: 8px 10px;
+    }
+}
+
+
+@media screen and (max-width: 240px) {
     .scroll-top {
         bottom: 40px;
-        right: 80px;
-        padding: 10px 12px;
+        right: 60px;
+        padding: 8px 8px;
     }
 }
 
@@ -539,6 +640,7 @@ footer {
     animation: fadeIn 0.3s;
 }
 
+
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -552,15 +654,19 @@ footer {
 }
 
 
+
+
 .modal-body {
     padding: 20px 0;
 }
+
 
 .modal-footer {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
+
 
 .modal-button {
     padding: 10px 20px;
@@ -574,15 +680,18 @@ footer {
     text-align: center;
 }
 
+
 .modal-button-primary {
     background-color: #007bff;
     color: #ffffff;
     border: none;
 }
 
+
 .modal-button-primary:hover {
     background-color: #0056b3;
 }
+
 
 .modal-button-secondary {
     background-color: rgb(170, 133, 41);
@@ -596,9 +705,11 @@ footer {
     transition: all .3s ease;
 }
 
+
 .modal-button-secondary:hover {
     background-color: rgba(44, 5, 5, 0.047);
 }
+
 
 #modalDescription .modal-button-secondary {
     display: inline-block;
@@ -610,9 +721,11 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+
 #modalDescription .modal-button-secondary:hover {
     background-color: #1e3d52;
 }
+
 
 .close {
     color: #aaa;
@@ -622,10 +735,14 @@ footer {
     transition: color 0.3s;
 }
 
+
 .close:hover,
 .close:focus {
     color: #000;
 }
+
+
+
 
 
 
@@ -634,20 +751,25 @@ footer {
         opacity: 0;
     }
 
+
     to {
         opacity: 1;
     }
 }
+
 
 @keyframes slideIn {
     from {
         transform: translateY(-50px);
     }
 
+
     to {
         transform: translateY(0);
     }
 }
+
+
 
 
 .close {
@@ -657,12 +779,14 @@ footer {
     font-weight: bold;
 }
 
+
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
+
 
 input[type=text],
 select,
@@ -678,12 +802,15 @@ textarea {
 }
 
 
+
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
+
 
 .live-site-btn {
     background-color: #2f5e7e;
@@ -699,15 +826,18 @@ textarea {
     align-items: center;
 }
 
+
 .github-btn:hover,
 .live-site-btn:hover {
     border-color: goldenrod;
     box-shadow: none;
 }
 
+
 .github-btn img {
     margin-right: 5px;
 }
+
 
 /*input[type=submit] {
     background-color: #04AA6D;
@@ -718,15 +848,18 @@ textarea {
     cursor: pointer;
 }
 
+
 input[type=submit]:hover {
     background-color: #1e5320;
 } */
+
 
 .modal-body {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
+
 
 .modal {
     display: none;
@@ -740,6 +873,7 @@ input[type=submit]:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -749,12 +883,14 @@ input[type=submit]:hover {
     max-width: 600px;
 }
 
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {
@@ -764,6 +900,8 @@ input[type=submit]:hover {
 }
 
 
+
+
 .modal {
     display: none;
     position: fixed;
@@ -776,6 +914,7 @@ input[type=submit]:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -784,6 +923,7 @@ input[type=submit]:hover {
     width: 80%;
     max-width: 600px;
 }
+
 
 #modalImage {
     max-width: 100%;
@@ -793,6 +933,7 @@ input[type=submit]:hover {
     display: block;
 }
 
+
 .close {
     color: #aaa;
     float: right;
@@ -800,12 +941,15 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 
+
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
+
+
 
 
 .projectModal {
@@ -820,6 +964,7 @@ input[type=submit]:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+
 .project-modal-content {
     display: flex;
     flex-direction: column;
@@ -832,12 +977,14 @@ input[type=submit]:hover {
     max-width: 600px;
 }
 
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {
